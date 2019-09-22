@@ -14,13 +14,21 @@ Link prefetching allows the browser to **fetch resources, store them in cache**,
 
 You need to be careful not to prefetch files too soon, or you can slow down the page.
 
+In expample we want to prefetch image
+`<link rel="prefetch" href="https://picsum.photos/id/870/500/500">`
+Which means browser will download it as soon as possible and you can see it in the picture:
+
+![prefetch](/assets/prefetch.png?raw=true)
+
 #### DNS prefetching:
 
 DNS prefetching allows the browser to **perform DNS lookups on a page in the background**.
 
 DNS prefetching can be added to a specific URL by adding the rel="dns-prefetch" tag to the link attribute.
 
+It will look like:
 
+![dns-prefetch](/assets/dns-prefetch.png?raw=true)
 
 ## Preconnect:
 

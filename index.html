@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="prefetch" href="https://picsum.photos/id/870/500/500">
+        <link rel="dns-prefetch" href="https://images.unsplash.com/">
+        <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body class="container-fluid">
+        <div class="center-block"> 
+            <img id="image-prefetch" class="img-thumbnail img-responsive" alt="Responsive image"/>
+            <img id="image-dns-prefetch" class="img-thumbnail img-responsive" alt="Responsive image"/>
+        </div>
+
+        <script >
+            setTimeout(() => {
+                const imagePrefetch = document.getElementById('image-prefetch');
+                imagePrefetch.src = 'https://picsum.photos/id/870/500/500';
+
+                const imageDnsPrefetch = document.getElementById('image-dns-prefetch');
+                imageDnsPrefetch.src = 'https://images.unsplash.com/photo-1566523276910-c4c5bfc6ca16?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max';
+
+                const preConnect = document.createElement('link');
+                preConnect.href = 'https://fonts.googleapis.com/css?family=Mansalva&display=swap';
+                preConnect.rel = 'stylesheet'
+                document.body.appendChild(a);
+            }, 2000);
+        </script>
+    </body>
+</html>

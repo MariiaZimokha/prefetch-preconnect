@@ -2,9 +2,10 @@
 
 **Example**: https://mariiazimokha.github.io/prefetch-preconnect/
 
+Wait for 2 seconds to see images. This time is needed to see differences between prefetch and preconnect 😅
 
 ## Prefetch:
-
+ 
 Prefetch is a low priority resource hint that allows the browser to **fetch resources in the background** that might be needed later, and **store them in the browser’s cache**. Once a page has finished loading it begins downloading additional resources and if a user then clicks on a prefetched link, it will load the content instantly. There are three different types of prefetching, link, DNS, and prerendering 
 
 

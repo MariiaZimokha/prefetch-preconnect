@@ -1,5 +1,8 @@
 # prefetch-preconnect
 
+**Example**: https://mariiazimokha.github.io/prefetch-preconnect/
+
+
 ## Prefetch:
 
 Prefetch is a low priority resource hint that allows the browser to **fetch resources in the background** that might be needed later, and **store them in the browser’s cache**. Once a page has finished loading it begins downloading additional resources and if a user then clicks on a prefetched link, it will load the content instantly. There are three different types of prefetching, link, DNS, and prerendering 
@@ -14,7 +17,7 @@ Link prefetching allows the browser to **fetch resources, store them in cache**,
 
 You need to be careful not to prefetch files too soon, or you can slow down the page.
 
-In expample we want to prefetch image
+In example we want to prefetch image
 `<link rel="prefetch" href="https://picsum.photos/id/870/500/500">`
 Which means browser will download it as soon as possible and you can see it in the picture:
 
